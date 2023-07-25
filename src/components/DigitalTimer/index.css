@@ -17,9 +17,13 @@ h1 {
   height: 20px;
   width: 20px;
   margin-right: 5px;
+}
+.reset-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
   margin-top: 10px;
 }
-
 .start-btn {
   font-weight: bold;
   display: flex;
@@ -31,7 +35,7 @@ h1 {
 .start-btn-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -82,22 +86,39 @@ p {
   align-items: center;
 }
 
+.ppppp {
+  font-size: 28px;
+  color: #00d9f5;
+}
 .timer-card {
-  background-color: green;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 50px;
   height: 100px;
   width: 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 23px;
+}
+.time-card {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.bhdhfhsdfhs {
+  font-size: 12px;
+  color: black;
+  height: 10px;
 }
 
 .djladsj {
   padding-bottom: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
