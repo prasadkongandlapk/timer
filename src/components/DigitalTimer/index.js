@@ -1,6 +1,5 @@
 import './index.css'
 import {Component} from 'react'
-import {PassThrough} from 'stream'
 
 const Timer = props => {
   const {count, isTimeStarted, minCount} = props
@@ -52,11 +51,12 @@ class DigitalTimer extends Component {
     this.setState(preState => ({
       isTimeStarted: !preState.isTimeStarted,
     }))
-    const intervalId = setInterval(this.tick, 1000)
-    return intervalId
+    this.intervalId = setInterval(this.tick, 1000)
   }
 
   onClickPauseBtn = () => {
+    clearInterval(this.intervalId)
+
     this.setState(preState => ({
       isTimeStarted: !preState.isTimeStarted,
     }))
